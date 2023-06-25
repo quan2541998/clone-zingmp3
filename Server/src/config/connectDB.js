@@ -6,7 +6,7 @@ dotenv.config();
 const ConnectDB = () => {
   mongoose.Promise = bluebird;
 
-  const URI = `${process.env.DB_CONNECT}://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+  const URI = `mongodb+srv://quan2541998:gVpDnbc2e7YrTplB@cluster0.a7evb7l.mongodb.net/`;
 
   return mongoose.connect(URI, {
     useNewUrlParser: true,

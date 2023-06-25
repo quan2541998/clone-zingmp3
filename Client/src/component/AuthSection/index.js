@@ -44,8 +44,13 @@ const AuthSection = () => {
       alert("Xác nhận mật khẩu không khớp");
       return;
     }
-    let res = await register({ username, email, password });
-    console.log(res);
+    try {
+      await register({ username, email, password });
+
+      alert("bạn đã đăng ký thành công");
+    } catch (error) {
+      return error;
+    }
   };
 
   const handleLogin = async (e) => {
@@ -56,7 +61,7 @@ const AuthSection = () => {
         alert(res.data.message);
         localStorage.setItem("ACCESS_TOKEN", res.data.token);
       } else {
-        alert(res.response.data.message);
+        alert("bạn đã đăng nhập thất bại");
       }
     } catch (error) {
       console.error(error);

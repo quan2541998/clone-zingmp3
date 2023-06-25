@@ -3,7 +3,7 @@ import axiosClient from "./apiConfig";
 const authApi = {
   register: async (data) => {
     try {
-      const url = "http://localhost:3001/api/v1/register";
+      const url = "/register";
       const response = await axiosClient.post(url, data);
       return response;
     } catch (error) {
@@ -13,7 +13,7 @@ const authApi = {
 
   login: async (data) => {
     try {
-      const url = "http://localhost:3001/api/v1/login";
+      const url = "/login";
       const response = await axiosClient.post(url, data);
       return response;
     } catch (error) {

@@ -9,9 +9,8 @@ import session from "express-session";
 import routerUser from "./apiRouter/userRouter.js";
 
 ConnectDB();
-const typeDefs = `#graphql`;
-const resolvers = "";
-const port = 4000; // Sửa đổi cổng thành một số cụ thể (ví dụ: 4000)
+
+const port = 4000;
 const app = express();
 
 app.use(cors());
