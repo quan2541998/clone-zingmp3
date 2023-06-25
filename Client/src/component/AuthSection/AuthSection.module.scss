@@ -1,0 +1,87 @@
+.wrapper {
+  background: var(--bg-box-item);
+  width: 100vw;
+  height: 100vh;
+  .content {
+    width: 500px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+    padding: 10px;
+
+    color: var(--color-text-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .title {
+        font-size: 25px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .platformLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        .facebook {
+          border-radius: 999px;
+          padding: 5px;
+          border: solid 1px var(--color-text-normal);
+          cursor: pointer;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        width: 80%;
+        .formGroup {
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--color-dark);
+          input {
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 100%;
+            outline: none;
+          }
+          button {
+            background: var(--color-primary);
+            padding: 10px;
+            border-radius: 10px;
+            color: var(--color-textWhenBtnActive);
+          }
+        }
+      }
+    }
+    .footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

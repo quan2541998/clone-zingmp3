@@ -1,0 +1,138 @@
+.outStandingSection {
+  .carouselWrapper {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .media {
+      padding: 10px;
+      display: flex;
+      background: var(--color-second);
+      border-radius: 10px;
+      gap: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--color-three);
+      }
+      .mediaLeft {
+        width: 84px;
+        height: 84px;
+        img {
+          object-fit: cover;
+          border-radius: 999px;
+        }
+      }
+      .mediaRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .type {
+          font-size: 12px;
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .subtitle {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.playListSection {
+  margin-top: 48px;
+  .header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    .thumbnail {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .title {
+      flex: 1;
+      .subtitle {
+        font-size: 14px;
+        color: #727070;
+      }
+      .artistsNames {
+        font-size: 18;
+        font-weight: 500;
+      }
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}
+.listSongSection {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .songItem {
+      padding: 0px 10px;
+    }
+  }
+}
+.MVSection {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    .MVItem {
+      .thumbnail {
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .media {
+        display: flex;
+        gap: 10px;
+        .thumbnail {
+          width: 40px;
+          height: 40px;
+          border-radius: 999px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .subtitle {
+          .title {
+            font-size: 15px;
+            font-weight: 500;
+          }
+          .infoArtistName {
+            font-size: 14px;
+            .artistNameItem {
+              &:hover {
+                color: #b72479;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.artistSection {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}

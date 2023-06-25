@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.songs {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+@media screen and (max-width: 1439px) {
+  .songs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

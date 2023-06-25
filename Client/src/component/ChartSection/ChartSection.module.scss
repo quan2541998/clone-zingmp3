@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+  height: auto;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.bgBlur {
+  position: absolute;
+  background-color: #2b273f;
+  inset: 0;
+}
+.bgAlpha {
+  position: absolute;
+  background-color: rgba(51, 16, 76, 0.95);
+  inset: 0;
+}
+
+.header {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.columns {
+  display: flex;
+  position: relative;
+  color: white;
+  gap: 20px;
+
+  .ranks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 3;
+  }
+  .chart {
+    flex: 7;
+    max-height: 300px;
+    position: relative;
+
+    .tooltip {
+      position: absolute;
+      overflow: hidden;
+      pointer-events: none;
+      border-radius: 3px;
+
+      .songData {
+        display: flex;
+        align-items: center;
+        .songThumbnail {
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          border-radius: 3px;
+          img {
+            width: 100%;
+            // height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .caret {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+    }
+  }
+}

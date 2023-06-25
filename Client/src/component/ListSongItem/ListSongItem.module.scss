@@ -1,0 +1,49 @@
+.wrapper {
+  width: 100%;
+  transition: all 0.15s ease;
+  padding: 0px 10px;
+  border-radius: 4px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  &:hover {
+    background-color: #ddcccc;
+  }
+  .listSongItem {
+    display: flex;
+
+    padding: 10px 0px;
+    // transition: 0.25s ease;
+    .info {
+      flex: 3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .thumbnail {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .content {
+        .title {
+          font-size: 16px;
+        }
+        .artistsNames {
+          font-size: 12px;
+        }
+      }
+    }
+    .album {
+      flex: 3;
+    }
+    .time {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .itemSong:hover {
+    background: #d4baba;
+  }
+}

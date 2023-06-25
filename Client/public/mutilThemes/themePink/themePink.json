@@ -1,0 +1,24 @@
+{
+  "--color-primary": "#B72479",
+  "--color-second": "#F2DEDE",
+  "--color-three": "#ECD0D0",
+  "--color-four": "#FDE8E8",
+  "--color-dark": "#32323D",
+
+  "--layout-bg": "#F9DBDB",
+  "--layout-header": "#F9DBDB",
+  "--layout-navbar": "#FBE6E6",
+  "--layout-playlist": "##F9DBDB",
+  "--layout-playcontrol": "#F9C6C5",
+  "--color-line": "#E0C5C5",
+
+  "--color-textWhenBtnActive": "#ffffff",
+  "--bg-navActive": "#EEDADA",
+
+  "--color-text-normal": "#32323D",
+  "--color-text-nav": "#32323d",
+
+  "--color-durationbar": "#E0B2B1",
+
+  "--bg-box-item": "#fde8e8"
+}

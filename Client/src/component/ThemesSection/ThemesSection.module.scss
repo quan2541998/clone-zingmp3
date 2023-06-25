@@ -1,0 +1,56 @@
+.bgOpacity {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.option {
+  width: 70vw;
+  max-width: 900px;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-box-item);
+  z-index: 9999;
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--color-text-normal);
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    .title {
+      font-size: 30px;
+      font-weight: 500px;
+      text-align: center;
+    }
+    .closeBtn {
+      font-size: 18px;
+    }
+  }
+
+  .content {
+    .section {
+      .titleSection {
+        font-size: 20px;
+      }
+      .columnWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+
+        .columnItem {
+          .thumbnail {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.wrapper {
+  padding-top: 32px;
+}
+.imageGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  .imageItem {
+    object-fit: cover;
+    border-radius: 18px;
+  }
+}

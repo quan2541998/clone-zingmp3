@@ -1,0 +1,47 @@
+.defaultBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 8px;
+  background: var(--color-three);
+}
+
+.btnRelease {
+  padding: 4px 24px;
+  border-radius: 100px;
+  font-size: 12px;
+  border: solid 1px var(--color-three);
+  text-transform: uppercase;
+
+  &.active {
+    background: var(--color-primary);
+    color: var(--color-textWhenBtnActive);
+  }
+}
+
+.btnPlayList {
+  font-size: 12px;
+  padding: 5px 0px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    background: var(--color-second);
+    color: var(--color-text-button-active);
+  }
+}
+
+.btnAuth {
+  padding: 4px 24px;
+  border-radius: 100px;
+  font-size: 18px;
+  border: solid 1px var(--color-three);
+
+  &.active {
+    background: var(--color-primary);
+    color: var(--color-textWhenBtnActive);
+  }
+}

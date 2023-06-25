@@ -1,0 +1,39 @@
+.sticker {
+  padding: 15px 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.purpleBg {
+  background-color: var(--purple-primary);
+}
+.linearBg {
+  background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: 1px solid white;
+  color: var(--color-text-normal-dark);
+}
+
+.btn.transparentBtn {
+  background-color: transparent;
+}
+
+.btn.yellowBtn {
+  background-color: yellow;
+}

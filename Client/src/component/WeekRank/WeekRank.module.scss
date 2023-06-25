@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+
+  .card {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

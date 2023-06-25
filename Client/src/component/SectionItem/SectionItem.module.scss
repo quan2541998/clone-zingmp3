@@ -1,0 +1,60 @@
+.wrapper {
+  .thumbnail {
+    overflow: hidden;
+    position: relative;
+    img {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      .bg {
+        display: block;
+      }
+      .actions {
+        display: block;
+      }
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+    .actions {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      display: none;
+      .playBtn {
+        padding: 10px;
+        border-radius: 999px;
+        border: solid 1px white;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .info {
+    .infoTitle {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .infoArtistName {
+      .artistNameItem {
+        color: #696969;
+
+        &:hover {
+          color: #b72479;
+        }
+      }
+    }
+  }
+}
